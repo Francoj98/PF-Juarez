@@ -1,0 +1,53 @@
+
+@media (max-width:435px){
+    .franja{
+        width: 250px;
+    }
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(4, 5fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "uno dos tres cuatro";
+}
+
+.alineado{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width:768px){
+    .tarjetas{
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "uno"
+        "dos"
+        "tres"
+        "cuatro";
+    }
+}
+
+.areauno{
+    grid-area: uno;
+}
+.areados{
+    grid-area: dos;
+}
+.areatres{
+    grid-area: tres;
+}
+.areacuatro{
+    grid-area: cuatro;
+}
+
+.card{
+    padding: 10px;
+    margin: 10px;
+}
+.cartas{
+    max-width: 540px;
+}

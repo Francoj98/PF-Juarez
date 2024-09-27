@@ -1,0 +1,472 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: #1e3932;
+}
+
+nav {
+  display: flex;
+  position: relative;
+  height: 100px;
+  align-items: center;
+  justify-content: right;
+  padding-right: 10px;
+}
+nav section {
+  align-items: center;
+}
+nav section li {
+  margin-right: 10px;
+}
+nav section li .colgre {
+  color: white;
+}
+nav section li .colgre:hover {
+  color: white;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+h1 .txtintro {
+  font-weight: 800;
+}
+
+footer {
+  height: 100px;
+  background-color: #a4a4a4;
+  color: white;
+}
+footer .redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .redes .iconos {
+  color: white;
+}
+
+.container {
+  align-items: center;
+}
+
+.red {
+  width: 50px;
+  height: 20px;
+  margin: 0px;
+  border: 20px 20px 0 20px;
+}
+
+.hamburguesa {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .hamburguesa {
+    display: flex;
+  }
+}
+.menunav {
+  display: flex;
+}
+.menunav .colgre {
+  color: white;
+}
+
+.active {
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .menunav {
+    display: none;
+  }
+}
+.position {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.position .compra {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  justify-content: space-around;
+}
+.position .compra .carro {
+  background-color: #1e3932;
+  color: white;
+}
+
+.cuota {
+  color: #08ad03;
+  font-size: smaller;
+}
+
+.tarjetashop {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tienda-cafe {
+  display: grid;
+  grid-template-columns: 5fr, 5fr 5fr;
+  grid-template-rows: 1fr, 1fr, 1fr;
+  grid-template-areas: "uno dos tres" "cuatro cinco seis" "siete ocho nueve";
+}
+
+@media (max-width: 768px) {
+  .tienda-cafe {
+    grid-template-columns: repeat(2, 5fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "uno dos" "tres cuatro" "cinco seis" "siete ocho" "nueve diez";
+  }
+}
+@media (max-width: 425px) {
+  .tienda-cafe {
+    grid-template-columns: 5fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete" "ocho" "nueve";
+  }
+}
+.areauno {
+  grid-area: uno;
+}
+
+.areados {
+  grid-area: dos;
+}
+
+.areatres {
+  grid-area: tres;
+}
+
+.areacuatro {
+  grid-area: cuatro;
+}
+
+.areacinco {
+  grid-area: cinco;
+}
+
+.areaseis {
+  grid-area: seis;
+}
+
+.areasiete {
+  grid-area: siete;
+}
+
+.areaocho {
+  grid-area: ocho;
+}
+
+.areanueve {
+  grid-area: nueve;
+}
+
+.areadiez {
+  grid-area: diez;
+}
+
+.tienda-capsula {
+  display: grid;
+  grid-template-columns: 5fr, 5fr 5fr;
+  grid-template-rows: 1fr, 1fr;
+  grid-template-areas: "uno dos tres" "cuatro cinco seis";
+}
+
+.areauno {
+  grid-area: uno;
+}
+
+.areados {
+  grid-area: dos;
+}
+
+.areatres {
+  grid-area: tres;
+}
+
+.areacuatro {
+  grid-area: cuatro;
+}
+
+.areacinco {
+  grid-area: cinco;
+}
+
+.areaseis {
+  grid-area: seis;
+}
+
+@media (max-width: 768px) {
+  .tienda-capsula {
+    grid-template-columns: repeat(2, 5fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "uno dos" "tres cuatro";
+  }
+}
+@media (max-width: 425px) {
+  .tienda-capsula {
+    grid-template-columns: 5fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "uno" "dos" "tres" "cuatro";
+  }
+}
+.tienda-vaso {
+  display: grid;
+  grid-template-columns: 5fr, 5fr 5fr;
+  grid-template-rows: 1fr, 1fr;
+  grid-template-areas: "uno dos tres" "cuatro cinco seis";
+}
+
+.areauno {
+  grid-area: uno;
+}
+
+.areados {
+  grid-area: dos;
+}
+
+.areatres {
+  grid-area: tres;
+}
+
+.areacuatro {
+  grid-area: cuatro;
+}
+
+.areacinco {
+  grid-area: cinco;
+}
+
+.areaseis {
+  grid-area: seis;
+}
+
+@media (max-width: 768px) {
+  .tienda-vaso {
+    grid-template-columns: repeat(2, 5fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "uno dos" "tres cuatro" "cinco";
+  }
+}
+@media (max-width: 425px) {
+  .tienda-vaso {
+    grid-template-columns: 5fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco";
+  }
+}
+.tienda-taza {
+  display: grid;
+  grid-template-columns: 5fr, 5fr 5fr;
+  grid-template-areas: "uno dos tres";
+}
+
+.areauno {
+  grid-area: uno;
+}
+
+.areados {
+  grid-area: dos;
+}
+
+.areatres {
+  grid-area: tres;
+}
+
+.areacuatro {
+  grid-area: cuatro;
+}
+
+@media (max-width: 768px) {
+  .tienda-taza {
+    grid-template-columns: repeat(2, 5fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "uno dos" "tres cuatro";
+  }
+}
+@media (max-width: 425px) {
+  .tienda-taza {
+    grid-template-columns: 5fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "uno" "dos" "tres";
+  }
+}
+.menu {
+  width: 50px;
+  height: 50px;
+}
+
+.shopp {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.shopp .carro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e3932;
+  color: white;
+}
+
+.txt-car {
+  width: 300px;
+}
+
+.inside-car {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.end-car {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.categorias {
+  border-radius: 0%;
+}
+
+.marcaimg {
+  width: 400px;
+}
+
+@media (max-width: 425px) {
+  .marcaimg {
+    width: 270px;
+  }
+}
+section.intro {
+  margin: 20px;
+}
+
+.container {
+  align-items: center;
+}
+
+img.imgcafeuno {
+  width: 200px;
+  height: 350px;
+  margin: 3px;
+  border: 5px;
+}
+
+img.imgcafedos {
+  width: 300px;
+}
+
+.franja {
+  width: 450px;
+}
+
+.imgcafe {
+  width: 120px;
+  margin: 15px;
+  border-radius: 50%;
+}
+
+.paso {
+  width: 45px;
+  height: 65px;
+  margin: 25px;
+  border: 20px;
+}
+
+@media (max-width: 435px) {
+  .franja {
+    width: 250px;
+  }
+}
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(4, 5fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "uno dos tres cuatro";
+}
+
+.alineado {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .tarjetas {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "uno" "dos" "tres" "cuatro";
+  }
+}
+.areauno {
+  grid-area: uno;
+}
+
+.areados {
+  grid-area: dos;
+}
+
+.areatres {
+  grid-area: tres;
+}
+
+.areacuatro {
+  grid-area: cuatro;
+}
+
+.card {
+  padding: 10px;
+  margin: 10px;
+}
+
+.cartas {
+  max-width: 540px;
+}
+
+.pasos-preparacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px;
+}
+
+.maps {
+  width: 100%;
+  height: 640px;
+}
+
+.formulario {
+  display: flex;
+  height: 40px;
+  width: 400px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
