@@ -184,11 +184,11 @@
 @media (max-width:768px){
     .tienda-vaso{
         grid-template-columns: repeat(2, 5fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas: 
         "uno dos"
         "tres cuatro"
-        "cinco";
+        "cinco seis";
     }
 }
 

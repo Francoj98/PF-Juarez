@@ -5,6 +5,10 @@
     }
 }
 
+.alineado{
+    display: flex;
+}
+
 .tarjetas{
     display: grid;
     grid-template-columns: repeat(4, 5fr);
@@ -13,12 +17,18 @@
     "uno dos tres cuatro";
 }
 
-.alineado{
-    display: flex;
-    justify-content: space-around;
+@media (max-width:768px){
+    .tarjetas{
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+        grid-template-rows: repeat(2, 4fr);
+        grid-template-areas:
+        "uno dos tres"
+        "cuatro cinco seis";
+    }
 }
 
-@media (max-width:768px){
+@media (max-width:425px){
     .tarjetas{
         display: grid;
         grid-template-columns: 2fr;
@@ -42,6 +52,12 @@
 }
 .areacuatro{
     grid-area: cuatro;
+}
+.areacinco{
+    grid-area: cinco;
+}
+.areaseis{
+    grid-area: seis;
 }
 
 .card{
